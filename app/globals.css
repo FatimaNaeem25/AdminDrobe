@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .gradient-brand {
+    background: linear-gradient(135deg, #5603CD 0%, #4646CD 50%, #3494CC 100%);
+  }
+  .gradient-brand-alt {
+    background: linear-gradient(135deg, #4646CD 0%, #3494CC 50%, #3399CC 100%);
+  }
+  .gradient-brand-hover {
+    background: linear-gradient(135deg, #4646CD 0%, #3494CC 50%, #3399CC 100%);
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom Scrollbar Styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a8d5e2 #f1f1f1;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #a8d5e2;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #8bc5d8;
+}
+
+/* Remove scrollbar buttons/arrows */
+*::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* Dark mode scrollbar */
+.dark * {
+  scrollbar-color: #7ab8cc #2d3748;
+}
+
+.dark *::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: #7ab8cc;
+}
+
+.dark *::-webkit-scrollbar-thumb:hover {
+  background: #6ba3b5;
+}
+
+/* Circular scrollbar for notification modal */
+.notification-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #a8d5e2 transparent;
+}
+
+.notification-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.notification-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.notification-scroll::-webkit-scrollbar-thumb {
+  background: #a8d5e2;
+  border-radius: 20px;
+}
+
+.notification-scroll::-webkit-scrollbar-thumb:hover {
+  background: #8bc5d8;
+}
+
+.notification-scroll::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.dark .notification-scroll {
+  scrollbar-color: #7ab8cc transparent;
+}
+
+.dark .notification-scroll::-webkit-scrollbar-thumb {
+  background: #7ab8cc;
+}
+
+.dark .notification-scroll::-webkit-scrollbar-thumb:hover {
+  background: #6ba3b5;
+}
+
