@@ -12,6 +12,7 @@ const pageTitles: Record<string, string> = {
   '/groups': 'Private Groups',
   '/feed': 'Feed',
   '/badges': 'Badges Management',
+  '/outfit-generation': 'Outfit Generation',
   '/settings': 'Settings',
 }
 

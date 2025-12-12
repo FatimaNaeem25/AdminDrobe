@@ -10,7 +10,8 @@ import {
   Award, 
   Settings, 
   ChevronLeft,
-  X
+  X,
+  Sparkles
 } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import Logo from './Logo'
@@ -21,6 +22,7 @@ const menuItems = [
   { icon: Users2, label: 'Groups', path: '/groups' },
   { icon: MessageSquare, label: 'Feed', path: '/feed' },
   { icon: Award, label: 'Badges', path: '/badges' },
+  { icon: Sparkles, label: 'Outfit Generation', path: '/outfit-generation' },
   { icon: Settings, label: 'Settings', path: '/settings' },
 ]
 
